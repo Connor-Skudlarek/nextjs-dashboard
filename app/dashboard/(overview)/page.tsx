@@ -9,6 +9,7 @@ import {
   LatestInvoicesSkeleton,
   CardsSkeleton,
 } from "@/app/ui/skeletons";
+import { Metadata } from "next";
 
 export default async function Page() {
   const {
@@ -39,3 +40,7 @@ export default async function Page() {
     </main>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Dashboard",
+};
