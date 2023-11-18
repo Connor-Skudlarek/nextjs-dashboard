@@ -3,7 +3,7 @@ import { authConfig } from "./auth.config";
 import Credentials from "next-auth/providers/credentials";
 import { z } from "zod";
 import type { User } from "@/app/lib/definitions";
-const bcrypt = require("bcryptjs");
+import bcrypt from "bcryptjs";
 import { sql } from "@vercel/postgres";
 
 async function getUser(email: string): Promise<User | undefined> {
